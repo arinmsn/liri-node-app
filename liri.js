@@ -24,13 +24,13 @@ var userInput = process.argv[3];
 
 // Welcome page
 
-console.log("┌──────────────────────────────────────────────────┐ ");
-console.log("│                     Welcome!                     │ ");
-console.log("│         LIRI is similiar to iPhone's SIRI.       │ ");
-console.log("│      It's a command-line node app that will      │ ");
-console.log("│ return data back at you. Follow the instructions │ ");
-console.log("│                and start searching.              │ ");
-console.log("└──────────────────────────────────────────────────┘ ");
+console.log("       ┌──────────────────────────────────────────────────┐ ");
+console.log("       │                     Welcome!                     │ ");
+console.log("       │         LIRI is similiar to iPhone's SIRI.       │ ");
+console.log("       │      It's a command-line node app that will      │ ");
+console.log("       │ return data back at you. Follow the instructions │ ");
+console.log("       │                and start searching.              │ ");
+console.log("       └──────────────────────────────────────────────────┘ ");
 console.log("");
 console.log("");
 
@@ -49,27 +49,82 @@ function liri() {
             name: "movie",
             type: "input",
             message: "Enter title of a name to search for: "
+        },
+
+        {
+            name: "song",
+            type: "input",
+            message: "Go ahead and search for a song: "
+        },
+
+        {
+            name: "band",
+            type: "input",
+            message: "Search for a band: "
         }
-    
+        
         ]).then(function(response) {
-                if(response.movie.length > 0) {
-                    searchMovie(userInput);
-                } else {
-                    searchMovie("Mr. Nobody");
-                    console.log("Since you didn't enter anything,");
-                    console.log("here is Mr. Nobody's rating.")
-                }
+
+            function begin(command, userInput) {
+                switch (command) {
+                    case ""
+                        // Do something
+                        break;
+
+                    case ""
+                        // Do something
+                        break;
+
+                    case ""
+                        // Do something
+                        break;
+
+                    default:
+                        // instructions? 
+                        break;
+                } // End of Switch
+            }
+
+    
+            // if(response.movie.length > 0) {
+            //     searchMovie(userInput);
+            // } else {
+            //     searchMovie("Mr. Nobody");
+            //     console.log("Since you didn't enter anything,");
+            //     console.log("here is Mr. Nobody's rating.")
+            // }
         });
 
 } // End of liri() 
-liri();
+// liri();
+
+
+
 
 function searchMovie(error, userInput) {
+        if (userInput == "" || userInput == undefined){
+            userInput = "Mr. Nobody";
+            // searchMovie("Mr. Nobody");
+            console.log("Haven't watched it? Check it out here: <https://www.imdb.com/title/tt0485947/> It's on Netfix!");
+        } else {
+
+        }
+
         axios.get("http://www.omdbapi.com/?t=" + userInput + "&y=&plot=short&apikey=trilogy").then(
-        function(response) {
-            if (!error && response.statsCode === 200) {
-            console.log("Title: " + data.Title);
-            console.log("The movie's rating is: " + response.data.imdbRating);
+        function(err, response, data) {
+            if (err) {
+                return console.log('Apologize for the inconvenience Error:  ' + err);
+            // console.log("Title: " + data.Title);
+            // console.log("The movie's rating is: " + response.data.imdbRating);
+            } else {
+                var movie = JSON.parse(data); // (data)
+                console.log("Title of the movie: " + movie.Title);
+                console.log("Year the movie came out: " + movie.Year);
+                console.log("IMDB Rating of the movie: " + movie.imdbRating);
+                console.log("Country where the movie was produced: " + movie.Country);
+                console.log("Language of the movie: " + movie.Language);
+                console.log("Plot of the movie: " + movie.Plot);
+                console.log("Actors in the movie" + movie.Actors);
             }
         });
 } 

@@ -43,19 +43,15 @@ function welcome() {
     console.log("   │                                         Welcome!                                        │ ");
     console.log("   ╞═════════════════════════════════════════════════════════════════════════════════════════╡ ");
     console.log("   │                                                                                         │ ");
-    console.log("   |                                                                                         │ ");
     console.log("   │       LIRI is a similar to iPhone's SIRI. LIRI is a  Language Interpretation and        │ ");
     console.log("   │       Recognition Interface. LIRI will be a command line node app that takes in         │ ");
     console.log("   │                            parameters and gives you back data.                          │ ");
     console.log("   │                                                                                         │ ");
-    console.log("   │                                                                                         │ ");
-    console.log("   │                                                                                         │ ");
     console.log("   └─────────────────────────────────────────────────────────────────────────────────────────┘ ");
-    console.log("");
     
 } 
 
-init(command, userInput);
+// init(command, userInput);
 
 function init(command, userInput) {
     switch(command) {
@@ -77,17 +73,18 @@ function init(command, userInput) {
             doIt(userInput);
             break;
         
-        case "help":
+        // case "help":
+        //     welcome();
+        //     helpUser();
+        //     break;
+
+        default:
             welcome();
             helpUser();
             break;
-
-        default:
-            console.log("   Enter 'node liri.js help' (without ' ') to get started.");
-            //as customer if they want to exit...
-            break;
     } // End of swtich
 }
+init(command, userInput);
 
 function concertIt(userInput) {
     if (!userInput) {
@@ -213,8 +210,10 @@ function helpUser() {
     console.log("   │  To get info. about a song :  node liri.js 'spotify-this-song` <'song', 'artist/band'>  │ ");
     console.log("   │  To get a movie's info:       node liri.js 'movie-this` <'movie title'>                 │ ");
     console.log("   │  To let app randomly run:     node liri.js 'do-what-it-says'                            │ ");
-    console.log("   │  If you need help:            node liri.js 'help'                                       │ ");
+    console.log("   │                                                                                         │ ");
     console.log("   │                                                                                         │ ");
     console.log("   └─────────────────────────────────────────────────────────────────────────────────────────┘ ");
     console.log("");
 }
+
+//If you need help:            node liri.js 'help' 

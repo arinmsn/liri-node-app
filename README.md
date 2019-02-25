@@ -68,5 +68,8 @@ A: The app will read 'random.txt' in case no command is given. If you change the
 Q. What if you don't enter any movie title? 
 A: App will use the default movie title "Mr. Nobody" to perform the search.
 
+Q. What if you forget to type a band name after 'concert-this' command?
+A: The app will use "Yanni" for the artist name to search for concert details.
+
 Q: What happens if you don't enter a song name?
 A: App will perform the search using the default **the sign, the ace of base**.

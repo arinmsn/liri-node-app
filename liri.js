@@ -30,19 +30,32 @@ function welcome() {
 
         // Welcome page
 
-    console.log("   ┌──────────────────────────────────────────────────────┐ ");
-    console.log("   │                         Welcome!                     │ ");
-    console.log("   ╞══════════════════════════════════════════════════════╡ ");
-    console.log("   |             LIRI is similiar to iPhone's SIRI.       │ ");
-    console.log("   │        It's a command-line node app that will        │ ");
-    console.log("   │   return data back at you. Follow the instructions   │ ");
-    console.log("   │                  and start searching.                │ ");
-    console.log("   └──────────────────────────────────────────────────────┘ ");
-    console.log("");    
-    console.log("");  
-    init(command, userInput);
-} // End of liri() 
-welcome();
+    // console.log("   ┌──────────────────────────────────────────────────────┐ ");
+    // console.log("   │                         Welcome!                     │ ");
+    // console.log("   ╞══════════════════════════════════════════════════════╡ ");
+    // console.log("   |             LIRI is similiar to iPhone's SIRI.       │ ");
+    // console.log("   │        It's a command-line node app that will        │ ");
+    // console.log("   │   return data back to you. Follow the instructions   │ ");
+    // console.log("   │                 and start searching.                 │ ");
+    // console.log("   └──────────────────────────────────────────────────────┘ ");
+    // console.log("");      
+    console.log("   ┌─────────────────────────────────────────────────────────────────────────────────────────┐ ");
+    console.log("   │                                         Welcome!                                        │ ");
+    console.log("   ╞═════════════════════════════════════════════════════════════════════════════════════════╡ ");
+    console.log("   │                                                                                         │ ");
+    console.log("   |                                                                                         │ ");
+    console.log("   │       LIRI is a similar to iPhone's SIRI. LIRI is a  Language Interpretation and        │ ");
+    console.log("   │       Recognition Interface. LIRI will be a command line node app that takes in         │ ");
+    console.log("   │                            parameters and gives you back data.                          │ ");
+    console.log("   │                                                                                         │ ");
+    console.log("   │                                                                                         │ ");
+    console.log("   │                                                                                         │ ");
+    console.log("   └─────────────────────────────────────────────────────────────────────────────────────────┘ ");
+    console.log("");
+    
+} 
+
+init(command, userInput);
 
 function init(command, userInput) {
     switch(command) {
@@ -63,9 +76,14 @@ function init(command, userInput) {
         case "do-what-it-says":
             doIt(userInput);
             break;
+        
+        case "help":
+            welcome();
+            helpUser();
+            break;
 
         default:
-            console.log("Default option!");
+            console.log("   Enter 'node liri.js help' (without ' ') to get started.");
             //as customer if they want to exit...
             break;
     } // End of swtich
@@ -98,11 +116,12 @@ function concertIt(userInput) {
 
 function spotifyIt(userInput) {
     
-    if ((userInput === null)  || (userInput === undefined)) {
+    if (!userInput) {
         // return console.log("You didn't enter a song name!");
-        userInput = "I want it the Way"; 
-        // If we omit this and random.txt
-        // is empty, we will get error
+        userInput = "I Want it That way"; 
+        //If we omit this and random.txt
+        //is empty, we will get error
+        // doIt();
     }
 
     spotify
@@ -117,11 +136,11 @@ function spotifyIt(userInput) {
         
         
         var song = data.tracks.items[0];
-        console.log("   ──────────────────────────────────────────────────────");
-        console.log("   Artist(s) :  " + song.album.artists[0].name);
-        console.log("   Song :  " + song.name);
-        console.log("   Preview link of song from Spotify :  " + song.external_urls.spotify); 
-        console.log("   Album the song is from :  " + song.album.name);
+        console.log("");
+        console.log("    Artist(s) :  " + song.album.artists[0].name);
+        console.log("    Song :  " + song.name);
+        console.log("    Preview link of song from Spotify :  " + song.external_urls.spotify); 
+        console.log("    Album the song is from :  " + song.album.name);
     })
 
 }
@@ -165,21 +184,37 @@ function doIt() {
         // console.log(dataArray);
         command = (dataArray[0]);
         userInput = (dataArray[1]);
-        // console.log(command + " ..... " +userInput);
-        spotifyIt(userInput);
+        // console.log("command: "+command + " ..... " +userInput);
+        // spotifyIt(userInput);
     
         switch (command) {
             case "concert-this":
-                concertIt();
+                concertIt(userInput);
                 break;
             
             case "spotify-this-song":
-                spotifyIt();
+                spotifyIt(userInput);
                 break;
 
             case "movie-this":
-                movieIt();
+                movieIt(userInput);
                 break;
         }
     })
 } // End of doIt()
+
+function helpUser() {
+    console.log("   ┌─────────────────────────────────────────────────────────────────────────────────────────┐ ");
+    console.log("   │                                         Instructions                                    │ ");
+    console.log("   ╞═════════════════════════════════════════════════════════════════════════════════════════╡ ");
+    console.log("   │                                                                                         │ ");
+    console.log("   |  No need to use ' ' and < >                                                             │ ");
+    console.log("   │  To get concert information:  node liri.js 'concert-this` <'artist/band name'>          │ ");
+    console.log("   │  To get info. about a song :  node liri.js 'spotify-this-song` <'song', 'artist/band'>  │ ");
+    console.log("   │  To get a movie's info:       node liri.js 'movie-this` <'movie title'>                 │ ");
+    console.log("   │  To let app randomly run:     node liri.js 'do-what-it-says'                            │ ");
+    console.log("   │  If you need help:            node liri.js 'help'                                       │ ");
+    console.log("   │                                                                                         │ ");
+    console.log("   └─────────────────────────────────────────────────────────────────────────────────────────┘ ");
+    console.log("");
+}

@@ -9,6 +9,12 @@ Liri is like iPhone's SIRI. Unlike Siri that is a Speech Interpretation and Reco
 
 ![Animated gif](LIRI_app.gif "Animation of completed project in action")
 
+## Screenshots
+
+![demostration of Movie-this command](img/4.GIF "demostration of Movie-this command")
+![movie-this command in action](img/5.GIF "movie-this command in action")
+![spotify-this-song command in action](img/7.GIF "spotify-this-song command in action")
+![concert-this command in action](img/8.GIF "concert-this command in action")
 
 ## Before we begin
 Languages and tools used: Javascript, Node.js, NPM, Moment.js, DotENV

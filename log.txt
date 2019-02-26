@@ -1,0 +1,194 @@
+
+
+  ----- Movie Info. -----
+Command: node liri.js movie-this
+Searched for: Mr. Nobody
+
+Title of the movie: Mr. Nobody
+Year the movie came out: 2009
+IMDB Rating of the movie: 7.8
+Country where the movie was produced: Belgium, Germany, Canada, France, USA, UK
+Language of the movie: English, Mohawk
+Plot of the movie: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Actors in the movie: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+
+  ----- Movie Info. -----
+Command: node liri.js movie-this
+Searched for: Sixth Sense
+
+Title of the movie: Sixth Sense
+Year the movie came out: 2013
+IMDB Rating of the movie: N/A
+Country where the movie was produced: UK
+Language of the movie: English
+Plot of the movie: Nathan gets the call that his pregnant wife has gone into labour. On his way to pick her up and take her to the hospital, he accidentally runs someone over. Rather than stop to help his ...
+Actors in the movie: Liz Ball, Grace Davis, Santiago Mosquera
+  ----- Concert Info. -----
+Command: node liri.js concert-this
+Searched for: Yanni
+Name of venue: Prambanan Temple
+Venue Location: Yogyakarta
+Date of the event: 07/06/2019
+
+  ----- Concert Info. -----
+Command: node liri.js concert-this
+Searched for: red hot chili peppers
+Name of venue: Brisbane Entertainment Centre
+Venue Location: Boondall
+Date of the event: 02/26/2019
+
+  ----- Song Info. -----
+Command: node liri.js spotify-this-song
+Searched for: the sign, the ace of base
+Artist: Ace of Base
+Song: The Sign
+Preview link of song from Spotify: https://open.spotify.com/track/0hrBpAOgrt8RXigk83LLNE
+
+
+  ----- Song Info. -----
+Command: node liri.js spotify-this-song
+Searched for: imagine+john+lennon
+Artist: John Lennon
+Song: Imagine - Remastered
+Preview link of song from Spotify: https://open.spotify.com/track/7pKfPomDEeI4TPT6EOYjn9
+
+
+
+  ----- Movie Info. -----
+Command: node liri.js movie-this
+Searched for: Mr. Nobody
+
+Title of the movie: Mr. Nobody
+Year the movie came out: 2009
+IMDB Rating of the movie: 7.8
+Country where the movie was produced: Belgium, Germany, Canada, France, USA, UK
+Language of the movie: English, Mohawk
+Plot of the movie: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Actors in the movie: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+
+  ----- Movie Info. -----
+Command: node liri.js movie-this
+Searched for: Sixth Sense
+
+Title of the movie: Sixth Sense
+Year the movie came out: 2013
+IMDB Rating of the movie: N/A
+Country where the movie was produced: UK
+Language of the movie: English
+Plot of the movie: Nathan gets the call that his pregnant wife has gone into labour. On his way to pick her up and take her to the hospital, he accidentally runs someone over. Rather than stop to help his ...
+Actors in the movie: Liz Ball, Grace Davis, Santiago Mosquera
+  ----- Song Info. -----
+Command: node liri.js spotify-this-song
+Searched for: the sign, the ace of base
+Artist: Ace of Base
+Song: The Sign
+Preview link of song from Spotify: https://open.spotify.com/track/0hrBpAOgrt8RXigk83LLNE
+
+
+  ----- Song Info. -----
+Command: node liri.js spotify-this-song
+Searched for: imagine+john+lennon
+Artist: John Lennon
+Song: Imagine - Remastered
+Preview link of song from Spotify: https://open.spotify.com/track/7pKfPomDEeI4TPT6EOYjn9
+
+
+  ----- Concert Info. -----
+Command: node liri.js concert-this
+Searched for: Yanni
+Name of venue: Prambanan Temple
+Venue Location: Yogyakarta
+Date of the event: 07/06/2019
+
+  ----- Concert Info. -----
+Command: node liri.js concert-this
+Searched for: red hot chili peppers
+Name of venue: Brisbane Entertainment Centre
+Venue Location: Boondall
+Date of the event: 02/26/2019
+
+  ----- Song Info. -----
+Command: node liri.js spotify-this-song
+Searched for: the sign, the ace of base
+Artist: Ace of Base
+Song: The Sign
+Preview link of song from Spotify: https://open.spotify.com/track/0hrBpAOgrt8RXigk83LLNE
+
+
+  ----- Song Info. -----
+Command: node liri.js spotify-this-song
+Searched for: imagine+john+lennon
+Artist: John Lennon
+Song: Imagine - Remastered
+Preview link of song from Spotify: https://open.spotify.com/track/7pKfPomDEeI4TPT6EOYjn9
+
+
+
+  ----- Movie Info. -----
+Command: node liri.js movie-this
+Searched for: Mr. Nobody
+
+Title of the movie: Mr. Nobody
+Year the movie came out: 2009
+IMDB Rating of the movie: 7.8
+Country where the movie was produced: Belgium, Germany, Canada, France, USA, UK
+Language of the movie: English, Mohawk
+Plot of the movie: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Actors in the movie: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+
+  ----- Movie Info. -----
+Command: node liri.js movie-this
+Searched for: Sixth Sense
+
+Title of the movie: Sixth Sense
+Year the movie came out: 2013
+IMDB Rating of the movie: N/A
+Country where the movie was produced: UK
+Language of the movie: English
+Plot of the movie: Nathan gets the call that his pregnant wife has gone into labour. On his way to pick her up and take her to the hospital, he accidentally runs someone over. Rather than stop to help his ...
+Actors in the movie: Liz Ball, Grace Davis, Santiago Mosquera
+  ----- Concert Info. -----
+Command: node liri.js concert-this
+Searched for: Yanni
+Name of venue: Prambanan Temple
+Venue Location: Yogyakarta
+Date of the event: 07/06/2019
+
+  ----- Concert Info. -----
+Command: node liri.js concert-this
+Searched for: red hot chili peppers
+Name of venue: Brisbane Entertainment Centre
+Venue Location: Boondall
+Date of the event: 02/26/2019
+
+  ----- Do What It Says -----
+Command: node liri.js spotify-this-song
+
+  ----- Song Info. -----
+Command: node liri.js spotify-this-song
+Searched for: "I Want it That Way"
+Artist: Backstreet Boys
+Song: I Want It That Way
+Preview link of song from Spotify: https://open.spotify.com/track/6e40mgJiCid5HRAGrbpGA6
+
+
+
+Command: undefined
+
+Command: help
+
+Command: help
+
+Command: undefined
+
+Command: User entered empty or undefined command.
+
+Command: help
+
+Command: User entered empty or undefined command.
+
+Command: help
+
+Command: help
+
+Command: User entered empty or undefined command.

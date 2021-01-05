@@ -4,7 +4,7 @@
   "description": "At its core, Liri app will help you find information about songs, concerts, and movies.",
   "main": "keys.js",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "dotenv": "^6.2.0",
     "inquirer": "^6.2.2",
     "moment": "^2.24.0",
